@@ -1,4 +1,4 @@
-﻿Imports DevExpress.Web.ASPxPivotGrid
+Imports DevExpress.Web.ASPxPivotGrid
 Imports System
 Imports System.Data
 
