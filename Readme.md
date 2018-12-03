@@ -4,7 +4,7 @@
 * [Default.aspx](./CS/ASPxPivotGrid_AddCustomPopupMenuItem/Default.aspx) (VB: [Default.aspx.vb](./VB/ASPxPivotGrid_AddCustomPopupMenuItem/Default.aspx))
 * [Default.aspx.cs](./CS/ASPxPivotGrid_AddCustomPopupMenuItem/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ASPxPivotGrid_AddCustomPopupMenuItem/Default.aspx.vb))
 <!-- default file list end -->
-# How to add a custom popup menu item
+# How to Add a Custom Item to the ASPxPivotGrid Popup Menu
 
 
 This example demonstrates how to add a custom menu item (<i>"Hide this value"</i>) to the field value popup menu and get information on a clicked field.
