@@ -1,4 +1,4 @@
-﻿using DevExpress.Web.ASPxPivotGrid;
+using DevExpress.Web.ASPxPivotGrid;
 using System;
 using System.Data;
 
