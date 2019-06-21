@@ -6,6 +6,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # How to add a custom popup menu item
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e2727/)**
+<!-- run online end -->
 
 
 <p>This example demonstrates how to add a custom menu item (<i>"Hide this value"</i>) to the field value popup menu. In this example, the <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebASPxPivotGridASPxPivotGrid_PopupMenuCreatedtopic">ASPxPivotGrid.PopupMenuCreated</a> event is used to add a custom menu item, the <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebASPxPivotGridASPxPivotGrid_CustomCallbacktopic">ASPxPivotGrid.CustomCallback </a> event -- to process an item click on the server side, and the <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebASPxPivotGridScriptsASPxClientPivotGrid_PopupMenuItemClicktopic">ASPxClientPivotGrid.PopupMenuItemClick</a> client-side event is used to perform a callback to the server.</p><p><strong>See Also:</strong> <br />
