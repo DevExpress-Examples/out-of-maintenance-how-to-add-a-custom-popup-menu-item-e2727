@@ -26,7 +26,7 @@ In this example, the following API is used:
 * <a href="https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotGridFieldBase.FilterValues">Field.FilterValues</a> property allows filter criteria addition to hide the specified value;
  * <a href="https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.ASPxPivotGrid.JSProperties">ASPxPivotGrid.JSProperties</a> stores the notification string to display on the client side using the JS alert function.
 
- ![](https://github.com/DevExpress-Examples/how-to-add-a-custom-popup-menu-item-e2727/blob/18.2.3%2B/images/Screenshot.png)
+ ![](./images/Screenshot.png)
 
 
 
