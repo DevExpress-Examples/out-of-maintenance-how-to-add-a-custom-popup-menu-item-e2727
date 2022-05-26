@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ASPxPivotGrid_AddCustomPopupMenuItem.Default" %>
 
-<%@ Register assembly="DevExpress.Web.ASPxPivotGrid.v18.2, Version=18.2.16.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxPivotGrid" tagprefix="dx" %>
+<%@ Register assembly="DevExpress.Web.ASPxPivotGrid.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxPivotGrid" tagprefix="dx" %>
 
 <!DOCTYPE html>
 
@@ -30,25 +30,34 @@
             <dx:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server"
                 ClientInstanceName="pivotGrid" OnCustomCallback="ASPxPivotGrid1_CustomCallback"
                 OnPopupMenuCreated="ASPxPivotGrid1_PopupMenuCreated" 
-                ClientIDMode="AutoID">
+                ClientIDMode="AutoID" OptionsData-DataProcessingEngine="Optimized" IsMaterialDesign="False">
                 <ClientSideEvents PopupMenuItemClick="HideValue" EndCallback="DisplayAlert" />
                 <Fields>
                     <dx:PivotGridField ID="fieldProductName" AreaIndex="1"
-                        FieldName="ProductName"
                         Area="RowArea">
+                        <DataBindingSerializable>
+                            <dx:DataSourceColumnBinding ColumnName="ProductName" />
+                        </DataBindingSerializable>
                     </dx:PivotGridField>
-                    <dx:PivotGridField ID="fieldCompanyName" Area="RowArea" AreaIndex="0"
-                        FieldName="CompanyName">
+                    <dx:PivotGridField ID="fieldCompanyName" Area="RowArea" AreaIndex="0">
+                        <DataBindingSerializable>
+                            <dx:DataSourceColumnBinding ColumnName="CompanyName" />
+                        </DataBindingSerializable>
                     </dx:PivotGridField>
                     <dx:PivotGridField ID="fieldOrderDate" Area="ColumnArea" AreaIndex="0"
-                        FieldName="OrderDate"
-                        GroupInterval="DateYear"
                         UnboundFieldName="fieldOrderDate">
+                        <DataBindingSerializable>
+                            <dx:DataSourceColumnBinding ColumnName="OrderDate" GroupInterval="DateYear" />
+                        </DataBindingSerializable>
                     </dx:PivotGridField>
-                    <dx:PivotGridField ID="fieldProductAmount" Area="DataArea" AreaIndex="0"
-                        FieldName="ProductAmount">
+                    <dx:PivotGridField ID="fieldProductAmount" Area="DataArea" AreaIndex="0">
+                        <DataBindingSerializable>
+                            <dx:DataSourceColumnBinding ColumnName="ProductAmount" />
+                        </DataBindingSerializable>
                     </dx:PivotGridField>
                 </Fields>
+
+<OptionsData DataProcessingEngine="Optimized"></OptionsData>
             </dx:ASPxPivotGrid>
         </div>
     </form>
